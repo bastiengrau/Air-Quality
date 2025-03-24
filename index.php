@@ -1,17 +1,57 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Air Quality Index</title>
     <link rel="stylesheet" href="style/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
-    />
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" />
+</head>
+
+<body>
+
+    <div class="backgroud-layer"></div>
+
+    <div class="app-container">
+        <h1>Air Quality App.</h1>
+        <div class="information-block">
+            <div class="loader active">
+                <img src="ressources/biodegradable.svg" alt="loader icon" class="loader-logo">
+            </div>
+            <img src="ressources/magnifying-glass.svg" alt="" class="emoji-logo">
+            <p class="user-information">Your city information.</p>
+            <table>
+                <tr>
+                    <th class="label">City</th>
+                    <td class="city-name">...</td>
+                </tr>
+                <tr>
+                    <th class="label">Pollution info</th>
+                    <td class="pollution-info">...</td>
+                </tr>
+                <tr>
+                    <th class="label">Air Quality Index</th>
+                    <td class="pollution-value">...</td>
+                </tr>
+            </table>
+
+            <p class="scale-bar-text">Pollution scale :</p>
+            <div class="scale-container">
+                <img src="ressources/location.svg" alt="location" class="class-pointer">
+                <div class="scale-section"></div>
+                <div class="scale-section"></div>
+                <div class="scale-section"></div>
+                <div class="scale-section"></div>
+                <div class="scale-section"></div>
+                <div class="scale-section"></div>
+            </div>
+        </div>
+    </div>
 
     <script src="js/main.js"></script>
-  </body>
+</body>
+
 </html>
