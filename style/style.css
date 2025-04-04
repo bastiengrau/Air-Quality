@@ -58,7 +58,33 @@ h1 {
 }
 
 .loader {
-  display: none;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: inherit;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, visibility 0.6s ease-out;
+}
+
+.loader.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.loader-logo {
+  width: 75px;
+  animation: loader 1.8s ease-out infinite;
+}
+
+@keyframes loader {
+  50% {
+    transform: rotate(360deg);
+  }
 }
 
 .emoji-logo {
@@ -135,7 +161,7 @@ td {
 }
 
 .scale-section:nth-child(3) {
-  background-color: #D7D703;
+  background-color: #d7d703;
 }
 
 .scale-section:nth-child(4) {
@@ -147,11 +173,11 @@ td {
 }
 
 .scale-section:nth-child(6) {
-    background-color: purple;
+  background-color: purple;
   flex-grow: 2;
 }
 
 .scale-section:nth-child(7) {
-    background-color: maroon;
+  background-color: maroon;
   flex-grow: 4;
 }

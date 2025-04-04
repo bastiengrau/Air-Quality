@@ -13,7 +13,7 @@
 
 <body>
 
-    <div class="backgroud-layer"></div>
+    <div class="background-layer"></div>
 
     <div class="app-container">
         <h1>Air Quality App.</h1>
